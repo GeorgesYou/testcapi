@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "recherche";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<html>
+<head>
+    <title>Vente de Billets | Recherche</title>
+    <link href="~/Content/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (Bootstrap's JavaScript plugins) -->
+    <script src="~/Content/js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="~/Content/css/form.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Content/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom Theme files -->
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--webfont-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
+    <!--webfont-->
+    <!-- dropdown -->
+    <script src="~/Content/js/jquery.easydropdown.js"></script>
+    <link href="~/Content/css/nav.css" rel="stylesheet" type="text/css" media="all" />
+    <!--js-->
+</head>
+<body>
+    <div class="container">
+        <h4>Veuillez entrer le nom du spectacle ou de l'artiste recherché ci-dessous.</h4><br />
+        <div class="input-group col-xs-12 col-md-5">
+            <input type="text" name="q" class="form-control" placeholder="Entrer le nom d'un spectacle ou artiste ...">
+            <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-primary" onclick="location.href='SpectacleTrouve'">
+                    Rechercher
+                </button>
+            </span>
+        </div>
+        <br />
+        <h1>Ou bien</h1>
+        <br />
+        <h4>Chercher les spectacles entre deux dates spécifiques</h4>
+        <br />
+        <div class="col-xs-12 col-md-5">
+            <div class="box box-primary">
+                <div class="box-header">
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label>Entre :</label>
+                            <div class="input-group date">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <input type="text" class="form-control pull-right datepicker">
+                            </div>
+                            <label>et :</label>
+                            <div class="input-group date">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <input type="text" class="form-control pull-right datepicker">
+                            </div>
+                            <br />
+                            <button type="submit" name="search" id="search-btn" class="btn btn-primary" onclick="location.href='SpectacleTrouve'">
+                                Rechercher
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br /><br /><br />
+</body>
+</html>

@@ -1,0 +1,10 @@
+[0621/163323.985:ERROR:process_info.cc(631)] range at 0x1ba14a2200000000, size 0x1ab fully unreadable
+[0621/163323.986:ERROR:process_info.cc(631)] range at 0x1ba14a8200000000, size 0x1ab fully unreadable
+[0621/163323.986:ERROR:process_info.cc(631)] range at 0x0, size 0x1ab fully unreadable
+[0621/163324.025:ERROR:process_reader_win.cc(242)] ReadMemory at 0x1ab1bc80000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0621/163324.025:WARNING:pe_image_reader.cc(282)] could not read dos header from C:\WINDOWS\System32\shcore.dll
+[0621/163324.025:ERROR:process_reader_win.cc(242)] ReadMemory at 0x70140000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0621/163324.026:WARNING:pe_image_reader.cc(282)] could not read dos header from C:\WINDOWS\System32\SYSFER.DLL
+[0621/163324.033:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7bf29f6000 of 40960 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0621/163324.033:ERROR:crash_report_exception_handler.cc(116)] WriteEverything failed
+[0621/163324.035:ERROR:scoped_process_suspend.cc(39)] NtResumeProcess: An attempt was made to access an exiting process.  (0xc000010a)
